@@ -1,1 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgoBangka</title>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <!-- header section -->
+
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        
+        <a href="#" class="logo">Ago<span>Bangka</span></a>
+
+        <nav class="navbar">
+            <a href="http://agobangka.id.biz.id#home/">home</a>
+            <a href="http://agobangka.id.biz.id/#About">About</a>
+            <a href="http://agobangka.id.biz.id/#Product">Product</a>
+            <a href="http://agobangka.id.biz.id/#review">review</a>
+            <a href="http://agobangka.id.biz.id/#contact">contact</a>
+        </nav>
+
+        <div class="icons" id="cartIcon">
+            <a  id="cart-icon" class="fas fa-shopping-cart">
+                <span id="cart-badge">0</span> <!-- Badge untuk jumlah produk -->
+              </a>
+              
+            
+
+
+              <!-- Popup Keranjang -->
+            <div class="cart-popup" id="cart-popup">
+            <button id="close-cart" class="close-btn"><i class="fas fa-times"></i></button>
+            <h2>Keranjang Anda</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total Harga: Rp0</p>
+
+            <!-- Formulir Alamat sebelum Checkout -->
+    <div class="kotak">
+    <div class="pemesanan" id="address-form">
+        <h3>Masukkan Alamat Pengiriman</h3>
+        <form id="shipping-address-form">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" required>
+          <label for="address">Alamat Lengkap:</label>
+          <textarea id="address" required></textarea>
+          <label for="city">Kota:</label>
+          <input type="text" id="city" required>
+          <label for="postal-code">Kode Pos:</label>
+          <input type="text" id="postal-code" required>
+          <label for="phone">Nomor Telepon:</label>
+          <input type="text" id="phone" required>
+        </form>
+    </div>
+      <!-- ini yang di + -->
+  
+            <div class="popup-actions">
+            <button id="checkout-button">Checkout</button>
+        </div>
+    </div>
+
+ 
+    </header>
+
+        <!-- single product -->
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/produk2.jpg" width="100%" id="productimg">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                        <img src="images/produk 4.jpg" width="100%" class="small-img">
+                    </div>
+    
+                    <div class="small-img-col">
+                        <img src="images/produk 5.jpg" width="100%" class="small-img" >
+                    </div>
+    
+                    <div class="small-img-col">
+                        <img src="images/produk3.jpg" width="100%" class="small-img" >
+                    </div>
+    
+                    <div class="small-img-col">
+                        <img src="images/produk 6.jpg" width="100%" class="small-img" >
+                    </div>
+    
+                    <div class="small-img-col">
+                        <img src="images/produk1.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+
+                    <div class="col-2">
+                        <p>Home / Martabak</p>
+                        <h1>Martabak Manis Pandan</h1>
+                        <h4>Rp.22.000-Rp.42.000</h4>
+                        <label for="variant"></label>
+                        <select id="variant">
+                            <option>Pilih Toping</option>
+                            <option value="kacang" data-price="22000">Kacang (RP.22000)</option>
+                            <option value="coklat" data-price="22000">Coklat (RP.22.000)  </option>
+                            <option value="wijen" data-price="22000">Wijen (RP.22.000)  </option>
+                            <option value="ketan hitam" data-price="22000">Ketan hitam (RP.22.000)  </option>
+                            <option value="pisang" data-price="22000">Pisang (RP.22.000)  </option>
+                            <option value="jagung" data-price="22000">Jagung (RP.22.000)  </option>
+                            <option value="Kismis" data-price="24000">Kismis (RP.24.000)  </option>
+                            <option value="Keju" data-price="27000">Keju (RP.27.000)  </option>
+                            <option value="Kacang coklat" data-price="27000">Kacang Coklat (RP.27.000)  </option>
+                            <option value="Pisang coklat" data-price="27000">Pisang coklat (RP.27.000)  </option>
+                            <option value="Kismis Coklat" data-price="28000">Kismis Coklat (RP.28.000)  </option>
+                            <option value="Kismis kacang" data-price="28000">Kismis Coklat (RP.28.000)  </option>
+                            <option value="Kismis wijen" data-price="28000">Kismis wijen (RP.28.000)  </option>
+                            <option value="Kismis pisang" data-price="28000">Kismis pisang (RP.28.000)  </option>
+                            <option value="Keju kacang" data-price="30000">Keju kacang (RP.30.000)  </option>
+                            <option value="Keju Coklat" data-price="30000">Keju kacang (RP.30.000)  </option>
+                            <option value="Keju wijen" data-price="30000">Keju wijen (RP.30.000)  </option>
+                            <option value="Keju Ketan" data-price="30000">Keju Ketan (RP.30.000)  </option>
+                            <option value="Keju pisang" data-price="30000">Keju pisang (RP.30.000)  </option>
+                            <option value="Keju jagung" data-price="30000">Keju jagung (RP.30.000)  </option>
+                            <option value="Keju kismis" data-price="32000">Keju kismis (RP.32.000)  </option>
+                            <option value="Keju kacang coklat" data-price="34000">Keju kacang coklat (RP.34.000)  </option>
+                            <option value="1/2keju 1/2kacang" data-price="30000">1/2keju 1/2kacang (RP.30.000)  </option>
+                            <option value="1/2keju 1/2kacang coklat" data-price="34000">1/2keju 1/2kacang (RP.34.000)  </option>
+                            <option value="Keju special" data-price="34000">keju special (Rp.34.000)  </option>
+                            <option value="Keju istimewa" data-price="40000">keju istimewa (Rp.40.000)  </option>
+                            <option value="Special campur" data-price="42000">Special campur (RP.42.000)  </option>
+                        </select>
+    
+                        <label for="quantity"></label>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <a class="btn" id="add-to-cart">Add To Cart</a>
+
+
+                        <h3>Product Details <i class="fa fa-faident"></i></h3>
+                        <br>
+                        <p>Martabak manis pandan dengan berbagai rasa yang harus anda coba </p>
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Barang lain -->
+    
+            <section class="products" id="products">
+                <h1 class="heading">Martabak <span>Lainnya</span></h1>
+    
+                <div class="box-container">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/produk1.jpg" alt="">
+                            <div class="icons">
+                                <a href="" class="fas fa-heart"></a>
+                                <a href="http://agobangka.id.biz.id/product/">lihat varian</a>
+                                <a href="" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Martabak Manis Original</h3>
+                            <div class="price"> Rp.20.000 <span>Rp.40.000</span> </div>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/produk3.jpg" alt="">
+                            <div class="icons">
+                                <a href="" class="fas fa-heart"></a>
+                                <a href="http://agobangka.id.biz.id/product3/">lihat varian</a>
+                                <a href="" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Martabak Manis Brownies</h3>
+                            <div class="price"> Rp.25.000 <span>Rp.45.000</span> </div>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/produk 4.jpg" alt="">
+                            <div class="icons">
+                                <a href="" class="fas fa-heart"></a>
+                                <a href="http://agobangka.id.biz.id/product4/">lihat varian</a>
+                                <a href="" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Martabak Kecil</h3>
+                            <div class="price"> Rp.12.000 <span> Rp.16.000 </span> </div>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/produk 5.jpg" alt="">
+                            <div class="icons">
+                                <a href="" class="fas fa-heart"></a>
+                                <a href="http://agobangka.id.biz.id/product5/">lihat varian</a>
+                                <a href="" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Martabak Telor Ayam</h3>
+                            <div class="price"> Rp.22.000 <span>Rp.40.000</span> </div>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/produk 6.jpg" alt="">
+                            <div class="icons">
+                                <a href="" class="fas fa-heart"></a>
+                                <a href="http://agobangka.id.biz.id/product6/">lihat varian</a>
+                                <a href="" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>Martabak Telor Bebek</h3>
+                            <div class="price"> Rp.24.000 <span> Rp.44.000 </span> </div>
+                        </div>
+                    </div>
+    
+                </div>
+            <!-- masih bingung ini section ny satu apa dua dah -->
+            </section>
+         </section>
+
+         <!-- footer section -->
+
+     <section class="footer">
+
+
+        <div class="box-container">
+            <div class="box">
+            <h3>Copright 2024</h3>
+            <a href="http://agobangka.id.biz.id/">home</a>
+            <a href="http://agobangka.id.biz.id/">about</a>
+            <a href="http://agobangka.id.biz.id/product/">products</a>
+            <a href="http://agobangka.id.biz.id/">review</a>
+            <a href="http://agobangka.id.biz.id/">contacts</a>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+            <h3>location</h3>
+            <a href="https://maps.app.goo.gl/QJMLUvtqVwzy1Gjo7">lihat disini</a>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+            <h3>Cotact info</h3>
+            <a href="#">085212345670</a>
+            <a href="#">example@agobangka</a>
+            <img src="images/nih payment.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created br <span> Nuraliaaw</span>*all rightt reserved</div>
+    </section>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+        <!-- js for toggle menu -->
+
+        <script>
+            var MenuItems = document.querySelectorAll('.menu-item');
+
+            MenuItems.style.maxHeight = "0px"
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        </script>
+
+        <!-- js for product lain -->
+
+        <script>
+            var productimg = document.getElementById("productimg");
+            var smallimg = document.getElementsByClassName("small-img");
+
+            smallimg[0].onclick = function()
+            {
+                productimg.src = smallimg[0].src;
+            }
+            smallimg[1].onclick = function()
+            {
+                productimg.src = smallimg[1].src;
+            }
+            smallimg[2].onclick = function()
+            {
+                productimg.src = smallimg[2].src;
+            }
+            smallimg[3].onclick = function()
+            {
+                productimg.src = smallimg[3].src;
+            }
+
+        </script>
+    </body>
+</html> 
+
+
 

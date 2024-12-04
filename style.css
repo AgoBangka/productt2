@@ -1,0 +1,622 @@
+:root{
+    --orange:##ff7300
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    text-transform: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+    scroll-padding-top: 6 rem;
+    overflow-x: hidden;
+}
+/* dari sini */
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: rgba(225, 51, 153, .05);
+}
+.heading span{
+    color: #ff6a00
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: 0.9rem 3.5rem ;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: #ff6a00;   
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+/* sampe sini */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+}
+header .logo{
+    font-size: 3rem;
+    color: #333
+
+}
+header .logo span{
+    color: #ff6a00
+
+}
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+header .navbar a:hover{
+    color: #000000
+}
+header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+header .icons a:hover{
+    color: #ff6a00;
+}
+
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+/* single product */
+
+.single-product{
+    margin-top: 80px;
+    padding: 0;
+    flex: 1 1 40rem;
+    position: relative;
+    margin: 0 auto; 
+    max-width: 1200px; 
+    padding: 0 15px; 
+    position: relative;
+    margin-top: 8rem; 
+}
+
+.single-product .col-2 img{
+    padding: 0;
+}
+
+.single-product .col-2 .btn{
+    position: relative;
+    font-size: 2rem;
+    
+}
+
+.single-product .col-2 {
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #000000;
+    border: 1px solid #ff6a00;
+    display: flex;
+    padding-left: 10px;
+    font-size: 2rem;
+    margin-left: 10px;
+
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    border: 1px solid #ff6a00;
+}
+
+.single-product p{
+    font-size: 2rem;
+}
+
+.single-product h1{
+    font-size: 6rem;
+}
+
+.single-product h4{
+    font-size: 3rem;
+}
+
+input:focus{
+    outline: none;
+}
+
+.single-product .fa{
+    color: #ff6a00;
+    margin-left: 10px;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+/* produk lain */
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: 1rem;
+    border: .2rem solid rgba(0, 0, 0, .1);
+    position: relative;
+}
+
+.products .box-container .box .classdiscount{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: .7rem 1rem;
+    font-size: 2rem;
+    color: #000000;
+    background-color: #acacac;
+    z-index: 1;
+    border-radius: 5rem;
+}
+
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top:.1 rem;
+    overflow: hidden;
+}
+
+.products .box-container .box .image img{
+    height: 25rem;
+}
+
+.products .box-container .box:hover .image img{
+    transform: scale(0.95);
+}
+
+.products .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem;
+    left: 0;
+    right: 0;
+    top: rem;
+    display: flex;
+}
+
+.products .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+
+.products .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 1.2rem;
+    width: 50%;
+    background: #ff6a00;
+    color: #fff;
+}
+.products .box-container .box .image .icons .cart-btn{
+    border-left: .1rem solid #a8a8a8;
+    border-right: .1rem solid #a8a8a8;
+    width: 100%;
+}
+
+.products .box-container .box .image .icons a:hover{
+    background: #8f8f8f;
+    color: #eee;
+}
+.products .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+}
+.products .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.products .box-container .box .content .price{
+    font-size: 2.5rem;
+    color: #ff6a00;
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color: #999
+}
+
+/* footer */
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: left;
+
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: blox;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color: #ff6a00;
+    text-decoration: underline;
+    font-size: 1.6rem;
+}
+
+.footer .box-container .box img{
+    margin-top: 1rem;
+    display: flex;
+    height: 4rem;
+    width: 100%;
+
+}
+
+.footer .credit{
+
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-top: 1rem solid rgba(0, 0, 0, .1);
+    text-align: center;
+    background-color: #333;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: relative;
+}
+
+.footer .credit span{
+    color: #ff6a00;
+    margin: 0;
+}
+
+
+
+
+
+/* coba */
+/* Gaya untuk tombol tutup */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #e74c3c;
+  }
+  
+  .cart-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  
+  .cart-popup h2 {
+    margin-top: 0;
+  }
+  
+  #cart-items {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  #cart-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #total-price {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Pusatkan Tombol Checkout */
+  .popup-actions {
+    display: flex;
+    justify-content: center; /* Menempatkan tombol di tengah */
+    margin-top: 20px;
+  }
+  
+  #checkout-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #checkout-button:hover {
+    background-color: #0056b3;
+  }
+  #cart-icon {
+    font-size: 30px;
+    position: fixed;
+    top: 20px;   /* Jarak dari atas */
+    right: 20px; /* Jarak dari kanan */
+    cursor: pointer;
+    color: #333;
+    z-index: 100; /* Pastikan ikon berada di atas elemen lainnya */
+  }
+  
+  #cart-icon:hover {
+    color: #007bff;
+  }
+  
+  #cart-badge {
+    position: absolute;
+    top: -5px; /* Menempatkan badge sedikit di atas ikon */
+    right: -5px; /* Menempatkan badge sedikit di kanan ikon */
+    background-color: red; /* Warna latar belakang badge */
+    color: white; /* Warna teks badge */
+    border-radius: 50%; /* Membuat badge bulat */
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 101; /* Pastikan badge berada di atas ikon */
+  }
+  
+
+
+
+  
+
+
+
+    /* Gaya untuk form alamat */
+
+
+    
+    
+    #address-form {
+        margin-top: 20px;
+        font-size: 1.8rem;
+      }
+      
+    #address-form label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      
+      #address-form input, #address-form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        display: block;
+      }
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+
+@media (max-width: 991px) {
+    html{
+    font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+    
+    .home{
+        background-position: center;
+    }
+
+}
+
+    @media (max-width: 768px){
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        width: 240px;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.774);
+        height: 100vh;
+        clip-path: polygon(0 0,100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0,100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a{
+        margin: 1rem;
+        padding: 1rem;
+        color: #fff;
+        background: #ff8e3d;
+        border: .5rem solid rgba(29, 14, 3, 0.1);
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+        border-radius: 2rem;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+
+    .small-container .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .single-product h1{
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .single-product h4{
+        font-size: 2rem;
+    }
+
+    .single-product h3{
+        font-size: 1rem;
+    }
+
+    .single-product p{
+        font-size: 1.5rem;
+    }
+
+    .single-product input{
+        font-size: 15px;
+    }
+
+    .single-product .col-2 .btn{
+        font-size: 1.5rem;
+    }
+
+    .single-product select{
+        font-size: 1.5rem;
+    }
+}
+
+    @media (max-width: 450px) {
+        html{
+        font-size: 50%;
+        }
+    
+        header{
+            padding: 2rem;
+        }
+
+}
