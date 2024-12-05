@@ -36,7 +36,7 @@ const cartBadge = document.getElementById('cart-badge'); // Badge untuk jumlah p
 const addToCartButton = document.getElementById('add-to-cart');
 
 const cartItems = [];
-const phoneNumber = '6285283751548'; // Ganti dengan nomor WhatsApp Anda
+const phoneNumber = '6289666153839'; // Ganti dengan nomor WhatsApp Anda
 
 
 // Menambahkan produk ke keranjang
